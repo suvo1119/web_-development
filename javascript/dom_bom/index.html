@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Fun Examples</title>
+  <style>
+
+    body {
+      
+      background-color: #111;
+  color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    button {
+      margin: 5px 0 20px 0;
+      padding: 5px 10px;
+      background-color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    ul, ol {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+    .highlight{
+      background-color: rgb(57, 243, 243);
+      color: rgb(8, 8, 8);
+
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript DOM Fun Examples</h1>
+<section id="example-1">
+  <!-- Accessing DOM Elements -->
+  <h2>Accessing DOM Elements</h2>
+  <p id="para">This is a paragraph. Click the button to change me!</p>
+  <button id="changeTextBtn">Change Text</button>
+</section>
+
+<section id="example2">
+  <!-- Traversing the DOM -->
+  <h2>Traversing the DOM</h2>
+  <ul id="cityList">
+    <li>New York</li>
+    <li>Tokyo</li>
+    <li>Paris</li>
+    <li>London</li>
+  </ul>
+  <button id="highlightBtn">Highlight First City</button>
+</section>
+
+<!--Example 3: Manipulating DOM Elements --> 
+<section id="example-3">
+<h2>Manipulating DOM Elements</h2>
+<div id="coffeeOrder">Order: <span
+id="coffeeType">Latte</span></div>
+<button id="changeOrder">Change Order to Espress</
+button>
+</section>
+
+
+<section id="example4">
+
+  <!-- Creating and Inserting Elements -->
+  <h2>Creating and Inserting Elements</h2>
+  <button id="addItemBtn">Add a New Item to the Shopping List</button>
+  <ul id="shoppingList">
+    <li>Bread</li>
+    <li>Milk</li>
+  </ul>
+</section>
+
+
+
+
+  <!-- Removing DOM Elements -->
+  <h2>Removing DOM Elements</h2>
+  <ul id="taskList">
+    <li>Task 1</li>
+    <li>Task 2</li>
+  </ul>
+
+
+
+  <section id="exp-6">
+    <h2>event handling</h2>
+    <button id="clickme"> Click Me!</button>
+  </section>
+
+<!-- Example 7: Event Delegation -->
+<section id="example-7">
+<h2>Event Delegation</h2>
+<ul id="teaList">
+<li class="teaItem">Green Tea</li>
+<li class="teaItem">Black Tea</li>
+<li class="teaItem">Oolong Tea</li>
+</ul>
+<p>Click on any tea to select it!</p>
+</section>
+
+
+<!-- Example 8: Form Handling-->
+<section id="example-8">
+<h2>Form Handling</h2>
+<form id="feedbackForm">
+<label for="feedbackInput">Your Feedback:</label>
+<input type="text" id="feedbackInput"
+placeholder="Enter feedback" />
+<button type="submit">Submit Feedback</button>
+</form>
+<p id="feedbackDisplay"></p>
+</section>
+
+<!-- exp 9-->
+
+<section id="exxp9">
+<h2>dom content loaded</h2>
+<p id="domStatus">waiting for dom to load </p>
+</section>
+
+
+<!-- Example 10: CSS Classes Manipulation-->
+<section id="example-10">
+<h2>CSS Classes Manipulation</h2>
+<p id="descriptionText">This text will change
+color!</p>
+<button id="toggleHighlight">Toggle Highlight</button>
+</section>
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

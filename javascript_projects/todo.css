@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+
+#todo-container {
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#input-text {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+#button {
+  background: #8000ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#todo-cont {
+  margin: 0;
+  padding: 0;
+}
+
+#todo-cont li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background: #222;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#todo-cont li button {
+  background: #ff000d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#todo-cont li button:hover {
+  background: #5a00cc;
+}

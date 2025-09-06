@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Nav Bar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    nav {
+      background-color: rgb(241, 189, 189);
+      padding: 15px;
+      border-radius: 50px;
+      max-width: 720px;
+      margin: 20px auto;
+      position: relative;
+    }
+
+    .nav {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      gap: 20px;
+    }
+
+    .nav li {
+      display: block;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      position: relative;
+      font-size: larger;
+    }
+
+    .nav a::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: rgb(158, 74, 74);
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+      transform-origin: left;
+    }
+
+    .nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    button {
+      background-color: rgb(238, 127, 48);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 0px 50px 50px 50px;
+      cursor: pointer;
+      font-size: large;
+    }
+
+    button:hover {
+      border-radius: 50px;
+      background-color: red;
+    }
+
+    /* Hamburger Styles */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      margin: 4px 0;
+    }
+
+    /* Responsive CSS */
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        display: none;
+        background-color: rgb(241, 189, 189);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        border-radius: 0 0 20px 20px;
+        padding-bottom: 20px;
+      }
+
+      .nav.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>This is a nav bar</h1>
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="nav" id="navMenu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button type="submit">Login</button></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navMenu");
+      nav.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

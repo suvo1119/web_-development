@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+     }
+     nav{
+          max-width: 720px;
+          margin-left: 30%;
+     }
+     h1{
+          text-align: center;
+          margin-top: 20px;
+     }
+     nav{
+          background-color: rgb(241, 189, 189);
+          padding: 15px;
+          border-radius: 50px;
+          
+     }
+     ul{
+          list-style-type: none;
+          display: flex;
+          justify-content: space-around;
+          gap: 20px;
+
+     }
+     
+     a{
+          text-decoration: none;
+          color: black;
+          font-weight: bold;
+     }
+     button{
+          background-color: rgb(238, 127, 48);
+          color: white;
+          border: none;
+          padding:10px 20px;
+          border-radius: 0px 50px 50px 50px;
+          cursor: pointer;
+          font-size: large;
+          margin: 0px 0px 0px 50px;   }
+          button:hover{
+               border-radius: 50px;
+                background-color: red;
+          }
+         .nav a{
+               font-size: larger;
+               font-weight: 600;
+               position: relative;
+               
+          }
+          .nav a::after{
+               position: absolute;
+               height: 2px;
+               width: 100%;
+               bottom: 0;
+               left: 0;
+               content: abc;
+               background-color: rgb(158, 74, 74);
+               transform: scaleX(0);
+               transition: transform 0.3s ease-in-out;
+          }
+          .nav a:hover::after{
+               transform: scaleX(1);
+          }
+    </style>
+</head>
+<body>
+   <h1>This is a nav bar</h1>
+    <nav>
+         <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            <li><button type="submit">login</button></li>
+         </ul>
+</body>
+</html>
